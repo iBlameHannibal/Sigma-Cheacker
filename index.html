@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sigma Check</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Sigma Check</h1>
+    <br>
+    <br>
+    <button id="start-button">Start Sigma Check</button>
+    <div id="loading" class="hidden">
+      <div class="loader"></div>
+    </div>
+  </div>
+
+  <script>
+    document.getElementById("start-button").addEventListener("click", function() {
+      document.getElementById("loading").classList.remove("hidden");
+      setTimeout(function() {
+        window.location.href = "result.html";  // Redirect after a short delay
+      }, 2000); // 2 seconds delay before redirect
+    });
+  </script>
+</body>
+</html>
+
